@@ -7,8 +7,8 @@ class Content extends Component {
     return (
         <div className="checkout__content">
             <p>
-            Thanks for your order {this.state.grabThis(data.firstName)}. We will ship that out as soon as possible to {this.state.grabThis(data.address)}.
-            Have a nice day {this.state.grabThis(data.firstName)}!
+            Thanks for your order {(data.firstName)}. We will ship that out as soon as possible to {(data.address)}.
+            Have a nice day {(data.firstName)}!
             </p> 
         </div>
     )

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import VampireKit from './kits/vampireKit';
 import CheckoutInput from './checkoutInput';
+import Content from './content';
 
 const INITIAL_STATE = {
   firstName: '',
@@ -12,57 +13,6 @@ const INITIAL_STATE = {
   creditCard: '',
   phone: ''
 }
-
-// class Orders extends Component {
-//   constructor() {
-//     super();
-
-//     this.state = {
-//       grabThis: ''
-//     }
-
-//     this.handleInputChange = this.handleInputChange.bind(this);
-
-//   }
-
-//   handleInputChange(event) {
-//     this.setState({[event.target.name]: event.target.value})
-//   }
-
-//   handleFormSubmit(event) {
-//     event.preventDefault()
-
-//     if (this.state.contentVisible) {
-//       this.setState(INITIAL_CHECKOUT)
-//     } else {
-//       this.setState( { contentVisible: true } )
-//     }
-//   }
-
-//   render() {
-//     const inputData = [
-//       {}
-//     ]
-//     return(
-//         <div>
-//           <VampireKit />
-//           <div className="checkout__inputs">
-//             <input placeholder="first name" /><br></br>
-//             <input placeholder="last name"></input><br></br>
-//             <input placeholder="shipping address"></input><br></br>
-//             <input placeholder="city"></input><br></br>
-//             <input placeholder="state"></input><br></br>
-//             <input placeholder="zip"></input><br></br>
-//             <input placeholder="credit card"></input><br></br>
-//             <input placeholder="phone"></input><br></br>
-//           </div>
-//           <button className={`checkout__${!this.state.contentVisible}`}>Checkout</button>
-
-//         </div>
-//     )
-//   }
-// }
-// export default Orders;
 
 class Orders extends Component {
 
