@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
-import Landing from './components/landing';
+import Landing from './components/landing/landing';
 import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
