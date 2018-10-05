@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CheckoutInput from './checkoutInput';
 import Content from './content';
+import Header from '../header';
 
 const INITIAL_STATE = {
   firstName: '',
@@ -58,7 +59,11 @@ class Orders extends Component {
 
 
     return (
-      <form onSubmit={this.handleFormSubmit} className="checkout">
+    <div>
+      <div className='titles-and-stuff'>
+        { Header() }
+      </div>
+      <form onSubmit={this.handleFormSubmit} className="checkout" >
         <div className="checkout__inputs">
           {
             inputData.map((data, index) => {
@@ -71,6 +76,7 @@ class Orders extends Component {
           this.state.contentVisible ? <Content data={this.state} /> : ''
         }
       </form>
+      </div>
     )
 
 

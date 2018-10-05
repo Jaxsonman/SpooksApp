@@ -59,8 +59,6 @@ class Landing extends Component {
           </div>
           <div className='spacer60'></div>
 
-
-
           <Link to='/order'>Proceed to Order Page</Link>
           <div className='spacer70'></div>
         
