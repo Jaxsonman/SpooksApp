@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Input from './input';
+import {Link} from 'react-router-dom';
 
 
 class Landing extends Component {
@@ -9,27 +9,11 @@ class Landing extends Component {
     this.state = {
       monsterInput: ''
     }
-
-    this.handleInputChange = this.handleInputChange.bind(this)
-    this.renderMonster = this.renderMonster.bind(this)
   }
 
   handleInputChange(event) {
         this.setState({monsterInput: event.target.value})
     }
-  renderMonster() {
-    if(this.state.monsterInput === "vampire") {
-      return <VampireKit />
-    } else if (this.state.monsterInput === "werewolf") {
-      return <WerewolfKit />
-    } else if (this.state.monsterInput === "ghost") {
-      return <GhostKit />
-    } else if (this.state.monsterInput === "zombie") {
-      return <ZombieKit />
-    }else {
-      alert("that is not a valid option")
-    }
-  }
 
   render() {
     return (
@@ -49,8 +33,7 @@ class Landing extends Component {
           <img src=""/>
           zombies banging your door down? our newest kit has a solution for you!
         </div>
-        {Input(this.state.monsterInput, this.handleInputChange)}
-        <button onClick={this.renderMonster}>Click me</button>
+          <Link to='/order'>Proceed to Order Page</Link>
         
       </div>
     );

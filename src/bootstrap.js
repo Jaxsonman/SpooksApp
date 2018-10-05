@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Landing from './components/landing/landing';
+import Orders from './components/orders/orders';
 import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
@@ -16,7 +17,10 @@ function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
-        <Landing />
+      <Switch>
+        <Route path="/" exact component={Landing} />
+        <Route path="/order" component={Orders} />
+      </Switch>
       </BrowserRouter>
     </Provider>
     , document.querySelector('.app-wrapper'));
