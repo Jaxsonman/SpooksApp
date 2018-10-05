@@ -71,7 +71,7 @@ class Orders extends Component {
             })
           }
         </div>
-        <button className={`__${!this.state.contentVisible ? 'generate' : 'clear'}`} type="submit">{this.state.contentVisible ? 'Cancel' : 'Checkout'} </button>
+        <button className={`orders__${!this.state.contentVisible ? 'checkout' : 'clear'}`} type="submit">{this.state.contentVisible ? 'Cancel' : 'Checkout'} </button>
         {
           this.state.contentVisible ? <Content data={this.state} /> : ''
         }

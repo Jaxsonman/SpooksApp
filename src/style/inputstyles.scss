@@ -1,0 +1,65 @@
+@mixin Button {
+    border: none;
+    height: 80px;
+    width: 275px;
+    border-radius: 7px;
+    background-color: #424242;
+    color: white;
+    font-size: 22px;
+    font-weight: 400px;
+    margin-top: -125px;
+    font-family: 'Creepster';
+}
+
+.checkout{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    &__inputs {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        padding-top: 100px
+    }
+
+    &__content {
+        font-family: 'Creepster';
+        font-size: 22px;
+    }
+}
+
+.kit__print__out {
+    font-family: 'Creepster';
+    color:grey;
+}
+
+
+.input {
+    border:none;
+    width: 500px;
+    height: 50px;
+    background-color: white;
+    align-items: center;
+    border-bottom: 2px solid #FE01FE;
+    background-color: rgb(255, 109, 255);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.50);
+    border-radius: 4px;
+}
+
+
+.orders{
+    &__checkout {
+        @include Button
+    }
+
+    &__clear {
+        @include Button
+    }
+}
