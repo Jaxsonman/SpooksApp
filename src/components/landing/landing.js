@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Input from './input'
 import logo from './logo.png';
 import Header from './header';
 
@@ -53,7 +52,7 @@ class Landing extends Component {
               <br></br>
             </div>
           </div>
-              <Input />
+            
 
           <Link to='/order'>Proceed to Order Page</Link>
         
