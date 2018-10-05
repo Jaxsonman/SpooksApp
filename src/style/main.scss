@@ -1,8 +1,25 @@
+body {
+    background-color: #f2f2f2;
+}
+
+
+
 .app {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    & a {
+        text-decoration: none; 
+        color: white;
+        background-color: #e1fb02;
+        width: 200px;
+        height: 40px;
+        border-radius: 7px;
+        text-align: center;
+        padding-top: 7px;
+    }
 }
 
 .logo > img {
@@ -10,19 +27,22 @@
     width: 150px;
 }
 
+.spacer70 {
+    height: 150px;
+}
 .spacer60 {
     height: 100px;
 }
 
 .titles-and-stuff {
     & h1 {
-        color: #e1fb02;
+        color: #fe01fe;
         font-family: 'Creepster';
         
     }
     
     & h2 {
-        color: #e1fb02;
+        color: #fe01fe;
         font-family: 'Creepster';
     }
     
@@ -62,15 +82,18 @@
 
 .squareWrapper {
     display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     
 }
+.square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-.input {
-
-    &__monsterInput {
-        border: none;
-        border-bottom: 1px solid #e1fb02;
-        text-align: center;
+    & p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         
     }
 }
