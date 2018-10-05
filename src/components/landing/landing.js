@@ -42,17 +42,17 @@ class Landing extends Component {
               <br></br>
             </div>
             <div className='square'>
-            <p>If you have a werewolf hunting your kids?</p>
+            <p>Do you have a werewolf hunting you?</p>
               <img src={who}/>
               <br></br>
             </div>
             <div className='square'>
               <img src={casper}/>
-              <p>Ghost watching you sleep?</p>
+              <p>Ghost haunting your bedroom?</p>
               <br></br>
             </div>
             <div className='square'>            
-            <p>Zombie banging your door down?</p>
+            <p>Zombie gnawing your stump leg?</p>
               <img src={zambie}/>
               <br></br>
             </div>
