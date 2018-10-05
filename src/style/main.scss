@@ -1,0 +1,76 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > img {
+    height: 150px;
+    width: 150px;
+}
+
+.spacer60 {
+    height: 100px;
+}
+
+.titles-and-stuff {
+    & h1 {
+        color: #e1fb02;
+        font-family: 'Creepster';
+        
+    }
+    
+    & h2 {
+        color: #e1fb02;
+        font-family: 'Creepster';
+    }
+    
+}
+
+.header {
+    font-family: 'Montserrat';
+    text-align: center;
+    align-self: center;
+    &__skew {
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 11%, 0 28%);
+        clip-path: polygon(0 0, 100% 0%, 100% 11%, 0 28%);
+
+        z-index: -10;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 110vh;
+        width: 100vw;
+        background-color: #424242;
+
+    }
+
+    &__border {
+        -webkit-clip-path: polygon(0 26%, 100% 11%, 100% 14%, 0 29%);
+        clip-path: polygon(0 26%, 100% 11%, 100% 14%, 0 29%);
+
+        z-index: -10;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 110vh;
+        width: 100vw;
+        background-color: #e1fb02;
+    }
+}
+
+.squareWrapper {
+    display: grid;
+    
+}
+
+.input {
+
+    &__monsterInput {
+        border: none;
+        border-bottom: 1px solid #e1fb02;
+        text-align: center;
+        
+    }
+}
