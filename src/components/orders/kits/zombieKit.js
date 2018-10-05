@@ -4,7 +4,7 @@ class ZombieKit extends Component {
   render() {
     return(
         <div>
-            
+            ZombieKit
         </div>
     )
   }

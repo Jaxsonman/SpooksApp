@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import VampireKit from './kits/vampireKit';
 import CheckoutInput from './checkoutInput';
 import Content from './content';
 
@@ -11,7 +10,8 @@ const INITIAL_STATE = {
   residentState: '',
   zip: '',
   creditCard: '',
-  phone: ''
+  phone: '',
+  monster: ''
 }
 
 class Orders extends Component {
@@ -51,7 +51,8 @@ class Orders extends Component {
       { title: 'State', state: this.state.residentState, name: 'residentState' },
       { title: 'Zip', state: this.state.zip, name: 'zip' },
       { title: 'Credit Card', state: this.state.creditCard, name: 'creditCard' },
-      { title: 'Phone', state: this.state.phone, name: 'phone' }
+      { title: 'Phone', state: this.state.phone, name: 'phone' },
+      { title: 'Monster', state: this.state.monster, name: 'monster' }
 
     ]
 

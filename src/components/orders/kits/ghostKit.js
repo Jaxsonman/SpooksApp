@@ -4,7 +4,7 @@ class GhostKit extends Component {
   render() {
     return(
         <div>
-            
+            Ghost
         </div>
     )
   }
